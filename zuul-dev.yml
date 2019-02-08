@@ -5,7 +5,7 @@ eureka:
 zuul:
   routes:
     client:
-      path: /**
+      path: /o/**
       serviceId: client
 #  ignored-patterns:
 #    - /client/env
