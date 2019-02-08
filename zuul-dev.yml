@@ -7,5 +7,5 @@ zuul:
     client:
       path: /**
       serviceId: client
-#  ignored-patterns:
-#    - /client/env
+  ignored-patterns:
+  - /client/env
