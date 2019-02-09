@@ -7,6 +7,7 @@ zuul:
     client:
       path: /**
       serviceId: client
+  sensitive-headers:
   ignored-patterns:
   - /client/env
   - /client/login
