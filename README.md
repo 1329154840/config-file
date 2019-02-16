@@ -1,2 +1,2 @@
 # config
-application config of spring cloud config server
+  配置服务和网关的yml
