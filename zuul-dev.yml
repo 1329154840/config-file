@@ -7,6 +7,9 @@ zuul:
     client:
       path: /**
       serviceId: client
+    devices-access:
+      path: /**
+      serviceId: devices-access
   sensitive-headers:
   ignored-patterns:
   - /client/env
