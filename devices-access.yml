@@ -7,3 +7,12 @@ spring:
       port: 9042
       username: cassandra
       password: cassandra
+eureka:
+  client:
+    service-url:
+      defaultZone: http://114.115.130.42:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: 114.115.130.42:${server.port}
+server:
+  port: 8083
