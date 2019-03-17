@@ -1,7 +1,5 @@
 
 spring:
-  application:
-    name: account
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
