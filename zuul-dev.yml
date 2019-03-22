@@ -2,7 +2,7 @@ zuul:
   routes:
     client:
       path: /**
-      serviceId: client
+      serviceId: account
     devices-access:
       path: /**
       serviceId: devices-access
