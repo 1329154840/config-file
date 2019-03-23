@@ -12,5 +12,4 @@ zuul:
       serviceId: devices-access
   sensitive-headers:
   ignored-patterns:
-  - /client/env
-  - /client/login
+  - /account/env
