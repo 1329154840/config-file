@@ -4,7 +4,7 @@ spring:
     host: 152.136.94.85
 zuul:
   routes:
-    client:
+    account:
       path: /**
       serviceId: account
     devices-access:
