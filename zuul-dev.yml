@@ -5,7 +5,7 @@ spring:
 zuul:
   routes:
     account:
-      path: /account/**
+      path: /api/**
       serviceId: account
       stripPrefix: true
     devices-access:
