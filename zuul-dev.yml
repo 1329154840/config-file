@@ -5,13 +5,13 @@ spring:
 zuul:
   routes:
     account:
-      path: /**
+      path: /account/**
       serviceId: account
-      stripPrefix: false
+      stripPrefix: true
     devices-access:
-      path: /**
+      path: /devices-access/**
       serviceId: devices-access
-      stripPrefix: false
+      stripPrefix: true
   sensitive-headers:
   ignored-patterns:
   - /account/env
