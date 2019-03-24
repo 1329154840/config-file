@@ -15,7 +15,7 @@ zuul:
     image:
       path: /image/**
       serviceId: account
-      stripPrefix: true
+      stripPrefix: false
   sensitive-headers:
   ignored-patterns:
   - /account/env
