@@ -12,7 +12,18 @@ zuul:
       path: /devices-access/**
       serviceId: devices-access
       stripPrefix: true
-  add-host-header: false
+    js:
+      path: /js/**
+      serviceId: account
+      stripPrefix: true
+    image:
+      path: /image/**
+      serviceId: account
+      stripPrefix: true
+    css:
+      path: /css/**
+      serviceId: account
+      stripPrefix: true
   sensitive-headers:
   ignored-patterns:
   - /account/env
