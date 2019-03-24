@@ -12,6 +12,9 @@ zuul:
       path: /devices-access/**
       serviceId: devices-access
       stripPrefix: true
+    image:
+      path: /image/**
+      serviceId: account
   sensitive-headers:
   ignored-patterns:
   - /account/env
