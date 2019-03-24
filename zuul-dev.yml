@@ -7,9 +7,11 @@ zuul:
     account:
       path: /**
       serviceId: account
+      stripPrefix: false
     devices-access:
       path: /**
       serviceId: devices-access
+      stripPrefix: false
   sensitive-headers:
   ignored-patterns:
   - /account/env
