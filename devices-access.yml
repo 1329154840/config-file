@@ -12,6 +12,6 @@ mqtt:
   client-id: devices-access
   username: bupt-Iot
   password: bupt-Iot
-  topic: hello,device
+  topic: /device/status,/device/upload
   timeout: 1000
   keepalive: 2000
