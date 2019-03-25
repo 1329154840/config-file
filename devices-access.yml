@@ -7,3 +7,11 @@ spring:
       port: 9042
       username: cassandra
       password: cassandra
+mqtt:
+  host: tcp://152.136.94.85:1883
+  client-id: devices-access
+  username: bupt-Iot
+  password: bupt-Iot
+  topic: hello
+  timeout: 1000
+  keepalive: 2000
