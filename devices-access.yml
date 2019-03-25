@@ -7,12 +7,3 @@ spring:
       port: 9042
       username: cassandra
       password: cassandra
-  mqtt:
-    client:
-      id: devices-access
-    default:
-      topic: demo_01
-    username: bupt-Iot
-    password: bupt-Iot
-    url: tcp://127.0.0.1:1883
-    completionTimeout: 3000
