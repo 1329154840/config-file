@@ -1,1 +1,24 @@
-
+spring:
+  redis:
+    port: 6379
+    host: 152.136.94.85
+  thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: LEGACYHTML5
+      cache: true
+  mvc:
+      static-path-pattern:
+zuul:
+  routes:
+    account:
+      path: /account/**
+      serviceId: account
+      stripPrefix: true
+    devices-access:
+      path: /devices-access/**
+      serviceId: devices-access
+      stripPrefix: true
+  sensitive-headers:
+  ignored-patterns:
+    - /account/env
