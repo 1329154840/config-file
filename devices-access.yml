@@ -7,6 +7,37 @@ spring:
       port: 9042
       username: cassandra
       password: cassandra
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      initialize-schema: never
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName : MyClusteredScheduler
+            instanceId : AUTO
+          threadPool:
+            class : org.quartz.simpl.SimpleThreadPool
+            threadCount : 25
+            threadPriority : 5
+          jobStore:
+            misfireThreshold : 60000
+            class : org.quartz.impl.jdbcjobstore.JobStoreTX
+            driverDelegateClass : org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+            useProperties : false
+            dataSource : myDS
+            tablePrefix : QRTZ_
+            isClustered : true
+            clusterCheckinInterval : 20000
+          dataSource:
+            myDS:
+              driver : com.mysql.jdbc.Driver
+              URL : jdbc:mysql://152.136.94.85:3306/quartz
+              user : root
+              password : 123456
+              maxConnections : 5
+              validationQuery : select 0 from dual
 mqtt:
   host: tcp://152.136.94.85:1883
   client-id: devices-access
