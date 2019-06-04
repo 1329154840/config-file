@@ -33,7 +33,7 @@ spring:
           dataSource:
             myDS:
               driver : com.mysql.jdbc.Driver
-              URL : jdbc:mysql://152.136.94.85:3306/quartz
+              URL : jdbc:mysql://152.136.94.85:3306/quartz&useSSL=true
               user : root
               password : 123456
               maxConnections : 5
